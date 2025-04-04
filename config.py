@@ -1,0 +1,16 @@
+#ALL CONFIGURATIONS GO HERE
+
+#ALL GLOBAL APPLICATION CONFIG ===== >
+APP_NAME = "Job Search Data Visualiser (JSDV)"
+VERSION = "0.0.1"
+DEBUG = True
+
+#ALL GUI CONFIG ---- >
+WINDOW_WIDTH = 2560
+WINDOW_HEIGHT = 1440
+
+#<-- TYPE FACE
+DEFAULT_FONT = ("Arial", 12)
+#<--
+#< ----
+#< =====
