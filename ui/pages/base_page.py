@@ -8,6 +8,7 @@ class BasePage:
     
     def build(self):
         """
+        Builds the UI of the page
         The UI of each page must be built here
         Each page implements the build method itslef (must be implemented by subclasses)
         """
