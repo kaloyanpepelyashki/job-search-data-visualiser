@@ -2,7 +2,7 @@ import dearpygui.dearpygui as dpg
 
 class BasePage:
     def __init__(self, tag: str, visible: bool = False):
-        self.tag: str = tag,
+        self.tag: str = tag
         self.visible = visible
         self.state = {}
     

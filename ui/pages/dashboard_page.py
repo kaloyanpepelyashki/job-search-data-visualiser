@@ -3,7 +3,7 @@ import dearpygui.dearpygui as dpg
 
 class DashboardPage(BasePage):
     def __init__(self, width, height):
-        super().__init__(tag="dashboard_page", visible=False)
+        super().__init__(tag="dashboard", visible=False)
         self.state["width"]= int(width)
         self.state["height"] = int(height)
         self.state["char-left"] = [0, 1, 12, 22]
@@ -14,7 +14,7 @@ class DashboardPage(BasePage):
         width = int(self.state.get("width", 600))
         height = int(self.state.get("height", 400))
 
-        with dpg.window(label="Dashboard", tag=str(self.tag), show=self.visible, width=width, height=height):
+        with dpg.window(label="Dashboard", tag=self.tag, show=self.visible, width=width, height=height, no_title_bar=True):
             dpg.add_text("📊 Dashboard Overview page")
             dpg.add_button(label="Refresh Chart", callback=self.update)
             self.state["plot"] = dpg.add_plot(label="Sample Plot", height=200, width=400)

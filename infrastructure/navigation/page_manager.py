@@ -8,19 +8,20 @@ class PageManager:
         self.current_page = None
 
     def register_pages(self, pages: dict):
-        self.pages = pages
+        for key, value in pages.items():
+            self.pages[str(key)] = value
 
         print("Registered pages: ", self.pages.keys())
 
     def switch_page(self, page):
+        if self.current_page:
+            self.current_page.hide()
+
+        page.show()
         self.current_page = page
-        dpg.delete_item(self.content_area_id, children_only=True)
-        with dpg.group(parent=self.content_area_id):
-            page.build()
-        page.visible = True
 
     def build_layout(self, width, height):
-        with dpg.window(label="master window", tag="master_window", width=width, height=height, autosize=False, no_scrollbar=True):
+        with dpg.window(label="master", tag="master_window", width=width, height=height, autosize=False, no_scrollbar=True):
             if self.global_navbar:
                 self._build_navbar()
             self.content_area_id = dpg.add_child_window(width=-1, height=-1)
@@ -28,8 +29,8 @@ class PageManager:
     def _build_navbar(self):
         try:
             print(self.pages)
-            first_callback = lambda: self.switch_page(self.pages["dashboard_page"]) 
-            second_callback = lambda: self.switch_page(self.pages["applications_page"])
+            first_callback = lambda: self.switch_page(self.pages["dashboard"]) 
+            second_callback = lambda: self.switch_page(self.pages["applications"])
 
             self.global_navbar.render(first_callback, second_callback)
         except():
