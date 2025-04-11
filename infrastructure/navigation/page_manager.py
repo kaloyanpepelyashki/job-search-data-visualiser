@@ -6,25 +6,34 @@ class PageManager:
         self.pages = {}
         self.global_navbar = None
         self.current_page = None
+        self.parent_window_tag = "master_content_area"
+
 
     def register_pages(self, pages: dict):
         for key, value in pages.items():
             self.pages[str(key)] = value
 
-        print("Registered pages: ", self.pages.keys())
-
     def switch_page(self, page):
         if self.current_page:
             self.current_page.hide()
 
+        #Checks if the page has been previously built
+        if not page.is_built:
+            #If page hasn't been built, it builds it
+            page.build()
+        
         page.show()
         self.current_page = page
 
     def build_layout(self, width, height):
-        with dpg.window(label="master", tag="master_window", width=width, height=height, autosize=False, no_scrollbar=True):
+        """
+        Builds the baster screen's layout
+        Initiates the master screen (master window) and builds all the necessary components for that. 
+        """
+        with dpg.window(label="master", tag="master", width=width, height=height, autosize=False, no_scrollbar=True, no_move=True, no_close=True, no_title_bar=True):
             if self.global_navbar:
                 self._build_navbar()
-            self.content_area_id = dpg.add_child_window(width=-1, height=-1)
+            self.content_area_id = dpg.add_child_window(tag=self.parent_window_tag, width=-1, height=-1, border=False)
     
     def _build_navbar(self):
         try:
@@ -33,8 +42,8 @@ class PageManager:
             second_callback = lambda: self.switch_page(self.pages["applications"])
 
             self.global_navbar.render(first_callback, second_callback)
-        except():
-            print("Error building navigation bar")
+        except Exception as ex:
+            print("Error building navigation bar: ", type(ex), ex.args)
 
 
         

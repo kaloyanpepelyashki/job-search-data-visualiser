@@ -2,32 +2,32 @@ from .base_page import BasePage
 import dearpygui.dearpygui as dpg
 
 class DashboardPage(BasePage):
-    def __init__(self, width, height):
-        super().__init__(tag="dashboard", visible=False)
+    def __init__(self, parent_window_tag, width, height):
+        super().__init__(tag="dashboard", visible=False, parent_window_tag=parent_window_tag)
         self.state["width"]= int(width)
         self.state["height"] = int(height)
         self.state["char-left"] = [0, 1, 12, 22]
         self.state["char-right"] = [0, 3, 15, 25]
     
     def build(self):
-        print("Dashboard tag:", self.tag)
-        width = int(self.state.get("width", 600))
-        height = int(self.state.get("height", 400))
+        try:
+            with dpg.child_window(label="Dashboard", tag=self.tag, parent=self.parent_window_tag, show=self.visible, autosize_x=True, autosize_y=True, border=False):
+                dpg.add_text("📊 Dashboard Overview page")
+                dpg.add_button(label="Refresh Chart", callback=self.update)
+                self.state["plot"] = dpg.add_plot(label="Sample Plot", height=200, width=400)
+                self.state["x_axis"] = dpg.add_plot_axis(dpg.mvXAxis, label="X Axis", parent=self.state["plot"])
+                self.state["y_axis"] = dpg.add_plot_axis(dpg.mvYAxis, label="Y Axis", parent=self.state["plot"])
 
-        with dpg.window(label="Dashboard", tag=self.tag, show=self.visible, width=width, height=height, no_title_bar=True):
-            dpg.add_text("📊 Dashboard Overview page")
-            dpg.add_button(label="Refresh Chart", callback=self.update)
-            self.state["plot"] = dpg.add_plot(label="Sample Plot", height=200, width=400)
-            self.state["x_axis"] = dpg.add_plot_axis(dpg.mvXAxis, label="X Axis", parent=self.state["plot"])
-            self.state["y_axis"] = dpg.add_plot_axis(dpg.mvYAxis, label="Y Axis", parent=self.state["plot"])
-
-            self.state["line_series"] = dpg.add_line_series(
-                self.state["char-left"],
-                self.state["char-right"],
-                label="Line",
-                parent=self.state["y_axis"]
-            )
-
+                self.state["line_series"] = dpg.add_line_series(
+                    self.state["char-left"],
+                    self.state["char-right"],
+                    label="Line",
+                    parent=self.state["y_axis"]
+                )
+            
+            self.is_built = True
+        except Exception as ex:
+            print(f"Error building page with tag: {self.tag}: ", type(ex), ex.args)
 
     def update(self):
         self.state['char-left'] = [0, 11, 22, 34, 22, 11, 0]
