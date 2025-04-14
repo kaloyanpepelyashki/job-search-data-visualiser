@@ -32,16 +32,15 @@ class PageManager:
         """
         with dpg.window(label="master", tag="master", width=width, height=height, autosize=False, no_scrollbar=True, no_move=True, no_close=True, no_title_bar=True):
             if self.global_navbar:
-                self._build_navbar()
+                self._build_navbar(width, height)
             self.content_area_id = dpg.add_child_window(tag=self.parent_window_tag, width=-1, height=-1, border=False)
     
-    def _build_navbar(self):
+    def _build_navbar(self, window_width, window_height):
         try:
-            print(self.pages)
             first_callback = lambda: self.switch_page(self.pages["dashboard"]) 
             second_callback = lambda: self.switch_page(self.pages["applications"])
 
-            self.global_navbar.render(first_callback, second_callback)
+            self.global_navbar.render(window_width, window_height, first_callback, second_callback)
         except Exception as ex:
             print("Error building navigation bar: ", type(ex), ex.args)
 

@@ -3,6 +3,7 @@ from config import WINDOW_WIDTH, WINDOW_HEIGHT, APP_NAME, APP_NAME_SHORT
 from infrastructure.screen import center_viewport
 from infrastructure import setup_logger
 from infrastructure.navigation import page_manager
+from ui.theme import create_light_theme
 from ui.pages import DashboardPage, ApplicationsPage
 from ui.components import NavBar
 
@@ -24,9 +25,14 @@ def main() :
     page_manager.build_layout(WINDOW_WIDTH, WINDOW_HEIGHT)
     page_manager.switch_page(page_manager.pages[dashboard_page.tag])
 
+
+    #//TODO For later: Write the logic for checking if datk theme is on and create the right theme accordingly
+    theme = create_light_theme() 
+
     dpg.setup_dearpygui()
     dpg.show_viewport()
     dpg.set_primary_window("master", True)
+    dpg.bind_theme(theme)
     dpg.start_dearpygui()
     dpg.destroy_context()
 
