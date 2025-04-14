@@ -1,4 +1,5 @@
 import dearpygui.dearpygui as dpg
+from infrastructure import error_log
 
 #This class must be treated as a signleton, so it should not be instantiated more
 class PageManager: 
@@ -13,6 +14,7 @@ class PageManager:
         for key, value in pages.items():
             self.pages[str(key)] = value
 
+
     def switch_page(self, page):
         if self.current_page:
             self.current_page.hide()
@@ -25,6 +27,7 @@ class PageManager:
         page.show()
         self.current_page = page
 
+
     def build_layout(self, width, height):
         """
         Builds the baster screen's layout
@@ -35,6 +38,7 @@ class PageManager:
                 self._build_navbar(width, height)
             self.content_area_id = dpg.add_child_window(tag=self.parent_window_tag, width=-1, height=-1, border=False)
     
+
     def _build_navbar(self, window_width, window_height):
         try:
             first_callback = lambda: self.switch_page(self.pages["dashboard"]) 
@@ -42,6 +46,7 @@ class PageManager:
 
             self.global_navbar.render(window_width, window_height, first_callback, second_callback)
         except Exception as ex:
+            error_log(f"Error building navigation bar:  {type(ex)}, {ex.args}")
             print("Error building navigation bar: ", type(ex), ex.args)
 
 

@@ -1,13 +1,15 @@
 import dearpygui.dearpygui as dpg
 from config import WINDOW_WIDTH, WINDOW_HEIGHT, APP_NAME, APP_NAME_SHORT
 from infrastructure.screen import center_viewport
-from infrastructure import setup_logger
+from infrastructure import setup_logger, info_log
 from infrastructure.navigation import page_manager
 from ui.theme import create_light_theme
 from ui.pages import DashboardPage, ApplicationsPage
 from ui.components import NavBar
 
 def main() :
+    info_log("App is running")
+    
     setup_logger()
     dpg.create_context()
     dpg.create_viewport(title=APP_NAME, width=WINDOW_WIDTH, height=WINDOW_HEIGHT, clear_color=(249, 249, 251, 100))

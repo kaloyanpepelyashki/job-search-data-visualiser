@@ -1,5 +1,8 @@
 import logging
 import logging.config
+from config import DEBUG
+
+logger = logging.getLogger(__name__)
 
 def setup_logger():
     logging.config.dictConfig({
@@ -21,7 +24,14 @@ def setup_logger():
             },
         },
         'root': {
-            'level': 'INFO',
+            'level': 'DEBUG' if DEBUG else 'INFO',
             'handlers': ['file', 'console'],
         },
     })
+
+
+def info_log(log_message: str):
+    logger.info(log_message)
+
+def error_log(log_message: str):
+    logger.error(log_message)
