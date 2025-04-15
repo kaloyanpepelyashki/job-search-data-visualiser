@@ -2,36 +2,43 @@ import logging
 import logging.config
 from config import DEBUG
 
-logger = logging.getLogger(__name__)
-
 def setup_logger():
     logging.config.dictConfig({
         'version': 1,
         'formatters': {
             'default': {
-                'format': '[%(asctime)s] %(levelname)s in %(module)s: %(message)s',
+                'format': '>LOG at [%(asctime)s]: %(levelname)s in %(module)s: %(message)s',
             },
+            'error' : {
+                'format': '>ERROR at [%(asctime)s]: %(levelname)s in %(module)s: %(message)s'
+            }
         },
         'handlers': {
-            'file': {
+            'console_info': {
+                'class': 'logging.StreamHandler',
+                'formatter': 'default',
+                'level': 'INFO',
+            },
+            'console_error': {
+                'class': 'logging.StreamHandler',
+                'formatter': 'error',
+                'level': 'ERROR',
+            },
+            'file_info': {
                 'class': 'logging.FileHandler',
                 'filename': 'app.log',
                 'formatter': 'default',
+                'level': "INFO"
             },
-            'console': {
-                'class': 'logging.StreamHandler',
-                'formatter': 'default',
+            'file_error': {
+                'class': 'logging.FileHandler',
+                'filename': 'app.log',
+                'formatter': 'error',
+                'level': "ERROR"
             },
         },
         'root': {
             'level': 'DEBUG' if DEBUG else 'INFO',
-            'handlers': ['file', 'console'],
+            'handlers': ['file_info', 'file_error', 'console_info', 'console_error'],
         },
     })
-
-
-def info_log(log_message: str):
-    logger.info(log_message)
-
-def error_log(log_message: str):
-    logger.error(log_message)

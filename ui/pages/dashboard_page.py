@@ -1,3 +1,4 @@
+import logging
 from .base_page import BasePage
 import dearpygui.dearpygui as dpg
 
@@ -11,6 +12,7 @@ class DashboardPage(BasePage):
     
     def build(self):
         try:
+            self.logger.info("Building dashboard page")
             with dpg.child_window(label="Dashboard", tag=self.tag, parent=self.parent_window_tag, show=self.visible, autosize_x=True, autosize_y=True, border=False):
                 dpg.add_text("📊 Dashboard Overview page")
                 dpg.add_button(label="Refresh Chart", callback=self.update)
@@ -27,10 +29,13 @@ class DashboardPage(BasePage):
             
             self.is_built = True
         except Exception as ex:
-            print(f"Error building page with tag: {self.tag}: ", type(ex), ex.args)
+            self.logger.error(f"Error building page with tag {self.tag}: {type(ex)}, {ex.args}")
 
     def update(self):
-        self.state['char-left'] = [0, 11, 22, 34, 22, 11, 0]
-        self.state['char-right'] = [0, 13, 25, 35,]
+        try:
+            self.state['char-left'] = [0, 11, 22, 34, 22, 11, 0]
+            self.state['char-right'] = [0, 13, 25, 35,]
 
-        dpg.set_value(self.state["line_series"], [self.state["char-left"], self.state["char-right"]])
+            dpg.set_value(self.state["line_series"], [self.state["char-left"], self.state["char-right"]])
+        except Exception as ex:
+            self.logger.error(f"Error updating state of page with tag {self.tag}: {type(ex)}, {ex.args}")

@@ -1,3 +1,4 @@
+import logging
 from .base_page import BasePage
 import dearpygui.dearpygui as dpg
 
@@ -9,6 +10,7 @@ class ApplicationsPage(BasePage):
         self.state["height"] = int(height)
 
     def build(self):
+        self.logger.info("Building applications page")
         try:
             width = int(self.state.get("width", 600)) 
             height = int(self.state.get("height", 400))
@@ -19,7 +21,7 @@ class ApplicationsPage(BasePage):
             
             self.is_built = True
         except Exception as ex:
-            print(f"Error building page with tag: {self.tag}: ", type(ex), ex.args)
+            self.logger.error(f"Error building page with tag {self.tag}: {type(ex)}, {ex.args}")
 
     def update(self):
         pass

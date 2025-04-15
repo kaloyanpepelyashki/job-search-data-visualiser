@@ -1,7 +1,11 @@
+import logging
 import dearpygui.dearpygui as dpg
 
 class BasePage:
     def __init__(self, tag: str, visible: bool = False, parent_window_tag = None):
+        #The logger. Used to log general or error application logs
+        self.logger = logging.getLogger(__name__)
+
         self.tag: str = tag
         self.parent_window_tag: str = parent_window_tag
         self.visible = visible
@@ -26,8 +30,7 @@ class BasePage:
             dpg.show_item(self.tag)
             self.visible = True
         except Exception as ex:
-            print(f"Error showing page with tag: {self.tag} ", type(ex), ex.args)
-
+            self.logger.error(f"Error showing page with tag: {self.tag} , {type(ex)}, {ex.args}")
 
     def hide(self):
         """
@@ -38,6 +41,7 @@ class BasePage:
             dpg.hide_item(self.tag)
             self.visible = False
         except Exception as ex:
-            print(f"Error hiding page with tag: {self.tag} ", type(ex), ex.args)
+            self.logger.error("Error hiding page with tag {self.tag}:  {type(ex)}, {ex.args}")
+         
 
         
