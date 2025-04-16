@@ -1,3 +1,7 @@
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 #ALL CONFIGURATIONS GO HERE
 
 #ALL GLOBAL APPLICATION CONFIG ===== >
@@ -15,4 +19,10 @@ APP_THEME_IS_DARK = False
 DEFAULT_FONT = ("Arial", 12)
 #<--
 #< ----
+#< =====
+
+#API CONFIG ===== >
+GOOGLE_API_SCOPES = os.getenv("GOOGLE_API_SCOPES")
+GOOGLE_SPREADSHEET_ID = os.getenv("GOOGLE_SPREADSHEET_ID")
+
 #< =====
