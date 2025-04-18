@@ -9,6 +9,7 @@ from ui.theme import create_light_theme
 from ui.pages import DashboardPage, ApplicationsPage
 from ui.components import NavBar
 
+from infrastructure.api import GoogleAPIClient
 
 
 setup_logger()
@@ -17,8 +18,11 @@ logger = logging.getLogger(__name__)
 def main() :
     try:
         logger.info("Application started")
-
         authenticate_for_google()
+        api_client = GoogleAPIClient()
+        values = api_client.get_cells_in_range("1UK0iLIDcJJJV1c4Ct7thHbHGqiZaEKH1yRw5mnQyYPg", "A3:T30")
+
+        print(values)
 
         dpg.create_context()
         dpg.create_viewport(title=APP_NAME, width=WINDOW_WIDTH, height=WINDOW_HEIGHT, clear_color=(249, 249, 251, 100))

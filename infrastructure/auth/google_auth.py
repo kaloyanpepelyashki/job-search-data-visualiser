@@ -11,9 +11,15 @@ from infrastructure.file_system import write_to_json
 logger = logging.getLogger(__name__)
 
 def authenticate_for_google():
-    """Authenticates with Google Sheets API and returns credentials."""
+    """
+    Authenticates with Google Sheets API and returns credentials.
+    This method must be called on initiation of the application or before using the google_api_client class.
+    It is required to authenticate for google, to access the APIs
+    """
+    
     SCOPES = GOOGLE_API_SCOPES
     creds = None
+
     try:
         if os.path.exists("google-api-token.json.json"):
             creds = Credentials.from_authorized_user_file("google-api-token.json", SCOPES)
@@ -28,6 +34,7 @@ def authenticate_for_google():
                 creds = flow.run_local_server(port=0)
 
             write_to_json("google-api-token.json", creds)
+
     except Exception as ex:
         logger.error(f"Error authenticating for google: {type(ex)}, {ex.args}")
         raise ex

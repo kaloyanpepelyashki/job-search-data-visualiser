@@ -27,3 +27,32 @@
 >LOG at [2025-04-16 15:40:27,157]: INFO in main: Application started
 >LOG at [2025-04-16 15:40:35,878]: INFO in dashboard_page: Building dashboard page
 >LOG at [2025-04-16 15:40:50,861]: INFO in main: App is exiting
+>LOG at [2025-04-18 10:17:27,947]: INFO in main: Application started
+>LOG at [2025-04-18 10:17:35,728]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-18 11:06:19,349]: INFO in main: App is exiting
+>LOG at [2025-04-18 11:06:34,290]: INFO in main: Application started
+>LOG at [2025-04-18 11:06:34,304]: INFO in __init__: file_cache is only supported with oauth2client<4.0.0
+>LOG at [2025-04-18 11:06:34,313]: ERROR in google_api_client: Error getting cells for range A3:T30 in sheet: <class 'AttributeError'>, ("'GoogleAPIClient' object has no attribute 'api_service'",)
+>ERROR at [2025-04-18 11:06:34,313]: ERROR in google_api_client: Error getting cells for range A3:T30 in sheet: <class 'AttributeError'>, ("'GoogleAPIClient' object has no attribute 'api_service'",)
+>LOG at [2025-04-18 11:06:42,260]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-18 11:14:32,729]: INFO in main: Application started
+>LOG at [2025-04-18 11:14:32,739]: INFO in __init__: file_cache is only supported with oauth2client<4.0.0
+>LOG at [2025-04-18 11:14:32,742]: ERROR in main: Could not start application. <class 'AttributeError'>, ("'dict' object has no attribute 'authorize'",)
+>ERROR at [2025-04-18 11:14:32,742]: ERROR in main: Could not start application. <class 'AttributeError'>, ("'dict' object has no attribute 'authorize'",)
+>LOG at [2025-04-18 11:14:43,619]: INFO in main: Application started
+>LOG at [2025-04-18 11:14:43,621]: INFO in __init__: file_cache is only supported with oauth2client<4.0.0
+>LOG at [2025-04-18 11:14:43,623]: ERROR in main: Could not start application. <class 'AttributeError'>, ("'dict' object has no attribute 'authorize'",)
+>ERROR at [2025-04-18 11:14:43,623]: ERROR in main: Could not start application. <class 'AttributeError'>, ("'dict' object has no attribute 'authorize'",)
+>LOG at [2025-04-18 11:15:47,640]: INFO in main: Application started
+>LOG at [2025-04-18 11:15:47,641]: INFO in __init__: file_cache is only supported with oauth2client<4.0.0
+>LOG at [2025-04-18 11:15:47,643]: ERROR in main: Could not start application. <class 'AttributeError'>, ("'dict' object has no attribute 'authorize'",)
+>ERROR at [2025-04-18 11:15:47,643]: ERROR in main: Could not start application. <class 'AttributeError'>, ("'dict' object has no attribute 'authorize'",)
+>LOG at [2025-04-18 11:33:26,388]: INFO in main: Application started
+>LOG at [2025-04-18 11:33:26,390]: INFO in __init__: file_cache is only supported with oauth2client<4.0.0
+>LOG at [2025-04-18 11:33:26,391]: ERROR in google_api_client: Error getting cells for range A3:T30 : <class 'AttributeError'>, ("'GoogleAPIClient' object has no attribute 'api_service'",)
+>ERROR at [2025-04-18 11:33:26,391]: ERROR in google_api_client: Error getting cells for range A3:T30 : <class 'AttributeError'>, ("'GoogleAPIClient' object has no attribute 'api_service'",)
+>LOG at [2025-04-18 11:33:39,568]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-18 11:41:25,044]: INFO in main: Application started
+>LOG at [2025-04-18 11:41:32,752]: INFO in __init__: file_cache is only supported with oauth2client<4.0.0
+>LOG at [2025-04-18 11:41:32,756]: ERROR in main: Could not start application. <class 'RuntimeError'>, ('GoogleAPIClient is not initialized. OAuth flow might still be pending.',)
+>ERROR at [2025-04-18 11:41:32,756]: ERROR in main: Could not start application. <class 'RuntimeError'>, ('GoogleAPIClient is not initialized. OAuth flow might still be pending.',)
