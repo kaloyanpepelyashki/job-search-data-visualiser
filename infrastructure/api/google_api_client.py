@@ -3,6 +3,7 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
 from infrastructure.file_system import read_from_json
+from infrastructure.exceptions import APIException 
 
 
 logger = logging.getLogger(__name__)
@@ -37,8 +38,8 @@ class GoogleAPIClient:
             else:
                 return values
         except HttpError as ex:
-            logging.error(f"Error getting cells for range {range} : {type(ex)}, {ex.args}")
-            return ex
+            logging.debug(f"Error getting cells for range {range} : {type(ex)}, {ex.args}")
+            raise APIException("Failed to fetch cells for requested range from requested sheet") from ex
         except Exception as ex:
-            logging.error(f"Error getting cells for range {range} : {type(ex)}, {ex.args}")
-            return ex
+            logging.debug(f"Error getting cells for range {range} : {type(ex)}, {ex.args}")
+            raise APIException("Failed to fetch cells for requested range from requested sheet") from ex

@@ -7,6 +7,7 @@ from googleapiclient.errors import HttpError
 import logging
 from config import GOOGLE_API_SCOPES
 from infrastructure.file_system import write_to_json
+from infrastructure.exceptions import AuthException
 
 logger = logging.getLogger(__name__)
 
@@ -37,4 +38,4 @@ def authenticate_for_google():
 
     except Exception as ex:
         logger.error(f"Error authenticating for google: {type(ex)}, {ex.args}")
-        raise ex
+        raise AuthException("Failed to authenticate for google") from ex

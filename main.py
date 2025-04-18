@@ -19,8 +19,6 @@ def main() :
     try:
         logger.info("Application started")
         authenticate_for_google()
-        api_client = GoogleAPIClient()
-        values = api_client.get_cells_in_range("1UK0iLIDcJJJV1c4Ct7thHbHGqiZaEKH1yRw5mnQyYPg", "A3:T30")
 
         print(values)
 

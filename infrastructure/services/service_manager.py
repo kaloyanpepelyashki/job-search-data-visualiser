@@ -9,15 +9,23 @@ class ServiceManager:
     and provides an access point to them to the rest of the application
     '''
     def __init__(self):
-        self._low_level_services = {}
-        self._high_level_services = {}
+        self._low_level_services = {} #Lower level services must be only called/implemented by other (higher level) services
+        self._high_level_services = {} #Higher level services can be called by the UI or other levels of the application
 
     
     def _register_lower_level(self, name: str, service):
+        '''
+        This method is soley responsible for registering lower level services to the _low_level_services registry
+        The method may only be used internally
+        '''
         self._low_level_services[name] = service
 
 
     def _register_high_level(self, name: str, service):
+        '''
+        This method is soley responsible for registering higher level services to the _high_level_services registry
+        The method may only be used internally
+        '''
         self._high_level_services[name] = service
 
 
