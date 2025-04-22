@@ -56,3 +56,6 @@
 >LOG at [2025-04-18 11:41:32,752]: INFO in __init__: file_cache is only supported with oauth2client<4.0.0
 >LOG at [2025-04-18 11:41:32,756]: ERROR in main: Could not start application. <class 'RuntimeError'>, ('GoogleAPIClient is not initialized. OAuth flow might still be pending.',)
 >ERROR at [2025-04-18 11:41:32,756]: ERROR in main: Could not start application. <class 'RuntimeError'>, ('GoogleAPIClient is not initialized. OAuth flow might still be pending.',)
+>LOG at [2025-04-19 10:16:15,101]: INFO in main: Application started
+>(DEBUG) [2025-04-19 10:16:15,101]: INFO in main: Application started
+>(DEBUG) [2025-04-19 10:16:15,101]: DEBUG in main: Just a debug

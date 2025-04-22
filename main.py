@@ -20,7 +20,6 @@ def main() :
         logger.info("Application started")
         authenticate_for_google()
 
-        print(values)
 
         dpg.create_context()
         dpg.create_viewport(title=APP_NAME, width=WINDOW_WIDTH, height=WINDOW_HEIGHT, clear_color=(249, 249, 251, 100))
@@ -38,8 +37,7 @@ def main() :
         page_manager.build_layout(WINDOW_WIDTH, WINDOW_HEIGHT)
         page_manager.switch_page(page_manager.pages[dashboard_page.tag])
 
-
-        #//TODO For later: Write the logic for checking if datk theme is on and create the right theme accordingly
+        #//TODO For later: Write the logic for checking if dark theme is on and create the right theme accordingly
         theme = create_light_theme() 
 
         dpg.setup_dearpygui()

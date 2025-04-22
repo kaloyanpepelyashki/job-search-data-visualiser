@@ -11,6 +11,9 @@ def setup_logger():
             },
             'error' : {
                 'format': '>ERROR at [%(asctime)s]: %(levelname)s in %(module)s: %(message)s'
+            },
+            'debug' : {
+                'format' : '>(DEBUG) [%(asctime)s]: %(levelname)s in %(module)s: %(message)s'
             }
         },
         'handlers': {
@@ -24,6 +27,11 @@ def setup_logger():
                 'formatter': 'error',
                 'level': 'ERROR',
             },
+            'console_debug': {
+                'class': 'logging.StreamHandler',
+                'formatter': 'debug',
+                'level': 'DEBUG',
+            },
             'file_info': {
                 'class': 'logging.FileHandler',
                 'filename': 'app.log',
@@ -36,9 +44,15 @@ def setup_logger():
                 'formatter': 'error',
                 'level': "ERROR"
             },
+            'file_debug': {
+                'class': 'logging.FileHandler',
+                'filename': 'app.log',
+                'formatter': 'debug',
+                'level': 'DEBUG',
+            },
         },
         'root': {
             'level': 'DEBUG' if DEBUG else 'INFO',
-            'handlers': ['file_info', 'file_error', 'console_info', 'console_error'],
+            'handlers': ['file_info', 'file_error', 'file_debug', 'console_info', 'console_error', 'console_debug'],
         },
     })
