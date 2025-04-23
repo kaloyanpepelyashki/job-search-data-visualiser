@@ -7,7 +7,7 @@ from infrastructure.exceptions import APIException
 from infrastructure.exceptions import DataFetchException, OperationException
 
 
-logger = logging.get_logger(__name__)
+logger = logging.getLogger(__name__)
 
 class GoogleSheetsService:
 

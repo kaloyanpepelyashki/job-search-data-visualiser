@@ -63,3 +63,81 @@
 >(DEBUG) [2025-04-23 13:58:05,207]: INFO in dashboard_page: Building dashboard page
 >LOG at [2025-04-23 14:12:26,124]: INFO in main: App is exiting
 >(DEBUG) [2025-04-23 14:12:26,124]: INFO in main: App is exiting
+>LOG at [2025-04-23 15:26:55,321]: INFO in main: Application started
+>(DEBUG) [2025-04-23 15:26:55,321]: INFO in main: Application started
+>LOG at [2025-04-23 15:27:02,166]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-23 15:27:02,166]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-23 15:27:02,168]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>ERROR at [2025-04-23 15:27:02,168]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>(DEBUG) [2025-04-23 15:27:02,168]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>LOG at [2025-04-23 15:38:04,664]: INFO in main: Application started
+>(DEBUG) [2025-04-23 15:38:04,664]: INFO in main: Application started
+>LOG at [2025-04-23 15:38:11,519]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-23 15:38:11,519]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-23 15:38:11,642]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>ERROR at [2025-04-23 15:38:11,642]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>(DEBUG) [2025-04-23 15:38:11,642]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>LOG at [2025-04-23 15:38:24,713]: INFO in main: App is exiting
+>(DEBUG) [2025-04-23 15:38:24,713]: INFO in main: App is exiting
+>LOG at [2025-04-23 15:40:16,890]: INFO in main: Application started
+>(DEBUG) [2025-04-23 15:40:16,890]: INFO in main: Application started
+>LOG at [2025-04-23 15:41:05,162]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-23 15:41:05,162]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-23 15:41:37,161]: INFO in main: Application started
+>(DEBUG) [2025-04-23 15:41:37,161]: INFO in main: Application started
+>LOG at [2025-04-23 15:41:52,417]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-23 15:41:52,417]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-23 15:44:22,053]: INFO in main: Application started
+>(DEBUG) [2025-04-23 15:44:22,053]: INFO in main: Application started
+>LOG at [2025-04-23 15:44:31,336]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-23 15:44:31,336]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-23 15:44:31,337]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-23 15:44:31,337]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-23 15:54:15,249]: INFO in main: Application started
+>(DEBUG) [2025-04-23 15:54:15,249]: INFO in main: Application started
+>LOG at [2025-04-23 15:55:40,761]: INFO in main: Application started
+>(DEBUG) [2025-04-23 15:55:40,761]: INFO in main: Application started
+>LOG at [2025-04-23 15:55:47,402]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-23 15:55:47,402]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-23 15:55:47,518]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-23 15:55:47,518]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-23 15:58:22,200]: INFO in main: App is exiting
+>(DEBUG) [2025-04-23 15:58:22,200]: INFO in main: App is exiting
+>LOG at [2025-04-23 15:58:26,787]: INFO in main: Application started
+>(DEBUG) [2025-04-23 15:58:26,787]: INFO in main: Application started
+>LOG at [2025-04-23 15:58:33,447]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-23 15:58:33,447]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-23 15:58:33,447]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-23 15:58:33,447]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-23 15:59:24,761]: INFO in main: App is exiting
+>(DEBUG) [2025-04-23 15:59:24,761]: INFO in main: App is exiting
+>LOG at [2025-04-23 15:59:28,364]: INFO in main: Application started
+>(DEBUG) [2025-04-23 15:59:28,364]: INFO in main: Application started
+>LOG at [2025-04-23 16:00:21,258]: INFO in main: Application started
+>(DEBUG) [2025-04-23 16:00:21,258]: INFO in main: Application started
+>LOG at [2025-04-23 16:00:26,492]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-23 16:00:26,492]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-23 16:00:26,493]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-23 16:00:26,493]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-23 16:00:53,432]: INFO in main: App is exiting
+>(DEBUG) [2025-04-23 16:00:53,432]: INFO in main: App is exiting
+>LOG at [2025-04-23 16:02:21,230]: INFO in main: Application started
+>(DEBUG) [2025-04-23 16:02:21,230]: INFO in main: Application started
+>LOG at [2025-04-23 16:02:34,188]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-23 16:02:34,188]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-23 16:02:34,299]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-23 16:02:34,299]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-23 16:03:01,928]: INFO in main: App is exiting
+>(DEBUG) [2025-04-23 16:03:01,928]: INFO in main: App is exiting
+>LOG at [2025-04-23 16:03:54,782]: INFO in main: Application started
+>(DEBUG) [2025-04-23 16:03:54,782]: INFO in main: Application started
+>LOG at [2025-04-23 16:05:15,356]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-23 16:05:15,356]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-23 16:05:17,623]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-23 16:05:17,623]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-23 16:15:20,738]: INFO in main: Application started
+>(DEBUG) [2025-04-23 16:15:20,738]: INFO in main: Application started
+>LOG at [2025-04-23 16:16:21,242]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-23 16:16:21,242]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-23 16:16:21,651]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-23 16:16:21,651]: INFO in dashboard_page: Fetching data

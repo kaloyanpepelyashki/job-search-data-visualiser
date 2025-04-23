@@ -36,6 +36,10 @@ class ServiceManager:
         return self._low_level_services[service_name]
 
     def get_service(self, service_name: str):
+        '''
+        Parameters
+            service_name (str) - google_sheets_service, job_tracker_data_provider: The service that is to be retrieved 
+        '''
         try:
             return self._high_level_services[service_name]
         except KeyError:
@@ -46,18 +50,21 @@ class ServiceManager:
     def _set_up_lower_level(self) : 
         try:
             google_api_client = GoogleAPIClient()
-            self._register_low_level("google_api_client", google_api_client)
+            self._register_lower_level("google_api_client", google_api_client)
         except Exception as ex:
             logger.error(F"Error setting up lower level services. {type(ex)}, {ex.args}")
             return ex
         
     def _set_up_high_level(self):
         try:
+            # GoogleSheetsService service registration
             google_sheets_service = GoogleSheetsService(self._get_low_level_service("google_api_client"))
             self._register_high_level("google_sheets_service", google_sheets_service)
 
+            # JobTrackerDataProvider service registration
             job_tacker_provider = JobTrackerDataProvider(self.get_service("google_sheets_service"))
             self._register_high_level("job_tracker_data_provider", job_tacker_provider)
+
         except Exception as ex:
             logger.error(F"Error setting up higher level services. {type(ex)}, {ex.args}")
             return ex
