@@ -1,61 +1,65 @@
->LOG at [2025-04-16 14:57:58,775]: INFO in main: Application started
->LOG at [2025-04-16 14:57:58,782]: INFO in dashboard_page: Building dashboard page
->LOG at [2025-04-16 14:59:39,693]: INFO in main: Application started
->LOG at [2025-04-16 14:59:39,695]: INFO in dashboard_page: Building dashboard page
->LOG at [2025-04-16 15:02:46,553]: INFO in main: Application started
->LOG at [2025-04-16 15:05:09,437]: INFO in main: Application started
->LOG at [2025-04-16 15:05:18,632]: ERROR in main: Could not start application. <class 'FileNotFoundError'>, (2, 'No such file or directory')
->ERROR at [2025-04-16 15:05:18,632]: ERROR in main: Could not start application. <class 'FileNotFoundError'>, (2, 'No such file or directory')
->LOG at [2025-04-16 15:06:56,010]: INFO in main: Application started
->LOG at [2025-04-16 15:07:51,230]: INFO in main: Application started
->LOG at [2025-04-16 15:08:39,626]: ERROR in main: Could not start application. <class 'TypeError'>, ('Object of type method is not JSON serializable',)
->ERROR at [2025-04-16 15:08:39,626]: ERROR in main: Could not start application. <class 'TypeError'>, ('Object of type method is not JSON serializable',)
->LOG at [2025-04-16 15:09:32,187]: INFO in main: Application started
->LOG at [2025-04-16 15:09:34,909]: ERROR in main: Could not start application. <class 'json.decoder.JSONDecodeError'>, ('Expecting value: line 1 column 1 (char 0)',)
->ERROR at [2025-04-16 15:09:34,909]: ERROR in main: Could not start application. <class 'json.decoder.JSONDecodeError'>, ('Expecting value: line 1 column 1 (char 0)',)
->LOG at [2025-04-16 15:09:53,977]: INFO in main: Application started
->LOG at [2025-04-16 15:09:53,978]: ERROR in main: Could not start application. <class 'json.decoder.JSONDecodeError'>, ('Expecting value: line 1 column 1 (char 0)',)
->ERROR at [2025-04-16 15:09:53,978]: ERROR in main: Could not start application. <class 'json.decoder.JSONDecodeError'>, ('Expecting value: line 1 column 1 (char 0)',)
->LOG at [2025-04-16 15:10:29,950]: INFO in main: Application started
->LOG at [2025-04-16 15:10:36,755]: ERROR in main: Could not start application. <class 'TypeError'>, ('Object of type Credentials is not JSON serializable',)
->ERROR at [2025-04-16 15:10:36,755]: ERROR in main: Could not start application. <class 'TypeError'>, ('Object of type Credentials is not JSON serializable',)
->LOG at [2025-04-16 15:25:08,212]: INFO in main: Application started
->LOG at [2025-04-16 15:25:08,212]: ERROR in main: Could not start application. <class 'json.decoder.JSONDecodeError'>, ('Expecting value: line 1 column 1 (char 0)',)
->ERROR at [2025-04-16 15:25:08,212]: ERROR in main: Could not start application. <class 'json.decoder.JSONDecodeError'>, ('Expecting value: line 1 column 1 (char 0)',)
->LOG at [2025-04-16 15:25:26,220]: INFO in main: Application started
->LOG at [2025-04-16 15:25:34,110]: INFO in dashboard_page: Building dashboard page
->LOG at [2025-04-16 15:40:27,157]: INFO in main: Application started
->LOG at [2025-04-16 15:40:35,878]: INFO in dashboard_page: Building dashboard page
->LOG at [2025-04-16 15:40:50,861]: INFO in main: App is exiting
->LOG at [2025-04-18 10:17:27,947]: INFO in main: Application started
->LOG at [2025-04-18 10:17:35,728]: INFO in dashboard_page: Building dashboard page
->LOG at [2025-04-18 11:06:19,349]: INFO in main: App is exiting
->LOG at [2025-04-18 11:06:34,290]: INFO in main: Application started
->LOG at [2025-04-18 11:06:34,304]: INFO in __init__: file_cache is only supported with oauth2client<4.0.0
->LOG at [2025-04-18 11:06:34,313]: ERROR in google_api_client: Error getting cells for range A3:T30 in sheet: <class 'AttributeError'>, ("'GoogleAPIClient' object has no attribute 'api_service'",)
->ERROR at [2025-04-18 11:06:34,313]: ERROR in google_api_client: Error getting cells for range A3:T30 in sheet: <class 'AttributeError'>, ("'GoogleAPIClient' object has no attribute 'api_service'",)
->LOG at [2025-04-18 11:06:42,260]: INFO in dashboard_page: Building dashboard page
->LOG at [2025-04-18 11:14:32,729]: INFO in main: Application started
->LOG at [2025-04-18 11:14:32,739]: INFO in __init__: file_cache is only supported with oauth2client<4.0.0
->LOG at [2025-04-18 11:14:32,742]: ERROR in main: Could not start application. <class 'AttributeError'>, ("'dict' object has no attribute 'authorize'",)
->ERROR at [2025-04-18 11:14:32,742]: ERROR in main: Could not start application. <class 'AttributeError'>, ("'dict' object has no attribute 'authorize'",)
->LOG at [2025-04-18 11:14:43,619]: INFO in main: Application started
->LOG at [2025-04-18 11:14:43,621]: INFO in __init__: file_cache is only supported with oauth2client<4.0.0
->LOG at [2025-04-18 11:14:43,623]: ERROR in main: Could not start application. <class 'AttributeError'>, ("'dict' object has no attribute 'authorize'",)
->ERROR at [2025-04-18 11:14:43,623]: ERROR in main: Could not start application. <class 'AttributeError'>, ("'dict' object has no attribute 'authorize'",)
->LOG at [2025-04-18 11:15:47,640]: INFO in main: Application started
->LOG at [2025-04-18 11:15:47,641]: INFO in __init__: file_cache is only supported with oauth2client<4.0.0
->LOG at [2025-04-18 11:15:47,643]: ERROR in main: Could not start application. <class 'AttributeError'>, ("'dict' object has no attribute 'authorize'",)
->ERROR at [2025-04-18 11:15:47,643]: ERROR in main: Could not start application. <class 'AttributeError'>, ("'dict' object has no attribute 'authorize'",)
->LOG at [2025-04-18 11:33:26,388]: INFO in main: Application started
->LOG at [2025-04-18 11:33:26,390]: INFO in __init__: file_cache is only supported with oauth2client<4.0.0
->LOG at [2025-04-18 11:33:26,391]: ERROR in google_api_client: Error getting cells for range A3:T30 : <class 'AttributeError'>, ("'GoogleAPIClient' object has no attribute 'api_service'",)
->ERROR at [2025-04-18 11:33:26,391]: ERROR in google_api_client: Error getting cells for range A3:T30 : <class 'AttributeError'>, ("'GoogleAPIClient' object has no attribute 'api_service'",)
->LOG at [2025-04-18 11:33:39,568]: INFO in dashboard_page: Building dashboard page
->LOG at [2025-04-18 11:41:25,044]: INFO in main: Application started
->LOG at [2025-04-18 11:41:32,752]: INFO in __init__: file_cache is only supported with oauth2client<4.0.0
->LOG at [2025-04-18 11:41:32,756]: ERROR in main: Could not start application. <class 'RuntimeError'>, ('GoogleAPIClient is not initialized. OAuth flow might still be pending.',)
->ERROR at [2025-04-18 11:41:32,756]: ERROR in main: Could not start application. <class 'RuntimeError'>, ('GoogleAPIClient is not initialized. OAuth flow might still be pending.',)
->LOG at [2025-04-19 10:16:15,101]: INFO in main: Application started
->(DEBUG) [2025-04-19 10:16:15,101]: INFO in main: Application started
->(DEBUG) [2025-04-19 10:16:15,101]: DEBUG in main: Just a debug
+>LOG at [2025-04-23 12:54:58,938]: INFO in main: Application started
+>(DEBUG) [2025-04-23 12:54:58,938]: INFO in main: Application started
+>LOG at [2025-04-23 12:54:58,939]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>ERROR at [2025-04-23 12:54:58,939]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>(DEBUG) [2025-04-23 12:54:58,939]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>LOG at [2025-04-23 12:55:37,272]: INFO in main: Application started
+>(DEBUG) [2025-04-23 12:55:37,272]: INFO in main: Application started
+>LOG at [2025-04-23 12:55:37,273]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>ERROR at [2025-04-23 12:55:37,273]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>(DEBUG) [2025-04-23 12:55:37,273]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>LOG at [2025-04-23 12:57:00,031]: INFO in main: Application started
+>(DEBUG) [2025-04-23 12:57:00,031]: INFO in main: Application started
+>LOG at [2025-04-23 12:57:00,032]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>ERROR at [2025-04-23 12:57:00,032]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>(DEBUG) [2025-04-23 12:57:00,032]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>LOG at [2025-04-23 12:57:32,602]: INFO in main: Application started
+>(DEBUG) [2025-04-23 12:57:32,602]: INFO in main: Application started
+>LOG at [2025-04-23 12:57:40,028]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>ERROR at [2025-04-23 12:57:40,028]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>(DEBUG) [2025-04-23 12:57:40,028]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>LOG at [2025-04-23 12:59:13,702]: INFO in main: Application started
+>(DEBUG) [2025-04-23 12:59:13,702]: INFO in main: Application started
+>LOG at [2025-04-23 13:00:00,757]: INFO in main: Application started
+>(DEBUG) [2025-04-23 13:00:00,757]: INFO in main: Application started
+>LOG at [2025-04-23 13:00:25,058]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>ERROR at [2025-04-23 13:00:25,058]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>(DEBUG) [2025-04-23 13:00:25,058]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>LOG at [2025-04-23 13:01:44,097]: INFO in main: Application started
+>(DEBUG) [2025-04-23 13:01:44,097]: INFO in main: Application started
+>LOG at [2025-04-23 13:01:52,593]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>ERROR at [2025-04-23 13:01:52,593]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>(DEBUG) [2025-04-23 13:01:52,593]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>LOG at [2025-04-23 13:03:59,235]: INFO in main: Application started
+>(DEBUG) [2025-04-23 13:03:59,235]: INFO in main: Application started
+>LOG at [2025-04-23 13:04:03,346]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>ERROR at [2025-04-23 13:04:03,346]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>(DEBUG) [2025-04-23 13:04:03,346]: ERROR in main: Could not start application. <class 'TypeError'>, ("'Condition' object is not callable",)
+>LOG at [2025-04-23 13:06:41,817]: INFO in main: Application started
+>(DEBUG) [2025-04-23 13:06:41,817]: INFO in main: Application started
+>LOG at [2025-04-23 13:07:47,517]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-23 13:07:47,517]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-23 13:08:25,413]: INFO in main: Application started
+>(DEBUG) [2025-04-23 13:08:25,413]: INFO in main: Application started
+>LOG at [2025-04-23 13:08:32,809]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-23 13:08:32,809]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-23 13:49:05,964]: INFO in main: Application started
+>(DEBUG) [2025-04-23 13:49:05,964]: INFO in main: Application started
+>LOG at [2025-04-23 13:49:13,527]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-23 13:49:13,527]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-23 13:55:41,521]: INFO in main: Application started
+>(DEBUG) [2025-04-23 13:55:41,521]: INFO in main: Application started
+>LOG at [2025-04-23 13:55:49,894]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-23 13:55:49,894]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-23 13:56:18,839]: INFO in main: App is exiting
+>(DEBUG) [2025-04-23 13:56:18,839]: INFO in main: App is exiting
+>LOG at [2025-04-23 13:56:31,674]: INFO in main: Application started
+>(DEBUG) [2025-04-23 13:56:31,674]: INFO in main: Application started
+>LOG at [2025-04-23 13:56:38,186]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-23 13:56:38,186]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-23 13:57:59,038]: INFO in main: Application started
+>(DEBUG) [2025-04-23 13:57:59,038]: INFO in main: Application started
+>LOG at [2025-04-23 13:58:05,207]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-23 13:58:05,207]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-23 14:12:26,124]: INFO in main: App is exiting
+>(DEBUG) [2025-04-23 14:12:26,124]: INFO in main: App is exiting

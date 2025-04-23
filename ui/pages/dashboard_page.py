@@ -11,6 +11,12 @@ class DashboardPage(BasePage):
         self.state["char-right"] = [0, 3, 15, 25]
     
     def build(self):
+        """
+        Constructs the dashboard UI components using the DearPyGui widgets..
+        It sets `is_built` to True once construction is successful. Indicating that the page (UI) has already been built once
+
+        Exceptions are logged if any errors occur during UI construction.
+        """
         try:
             self.logger.info("Building dashboard page")
             with dpg.child_window(label="Dashboard", tag=self.tag, parent=self.parent_window_tag, show=self.visible, autosize_x=True, autosize_y=True, border=False):

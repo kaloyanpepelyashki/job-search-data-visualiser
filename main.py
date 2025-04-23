@@ -8,8 +8,7 @@ from infrastructure.auth import authenticate_for_google
 from ui.theme import create_light_theme
 from ui.pages import DashboardPage, ApplicationsPage
 from ui.components import NavBar
-
-from infrastructure.api import GoogleAPIClient
+from infrastructure.runtime import async_manager
 
 
 setup_logger()
@@ -18,6 +17,7 @@ logger = logging.getLogger(__name__)
 def main() :
     try:
         logger.info("Application started")
+
         authenticate_for_google()
 
 
@@ -36,6 +36,8 @@ def main() :
 
         page_manager.build_layout(WINDOW_WIDTH, WINDOW_HEIGHT)
         page_manager.switch_page(page_manager.pages[dashboard_page.tag])
+
+        #async_manager.start_polling()
 
         #//TODO For later: Write the logic for checking if dark theme is on and create the right theme accordingly
         theme = create_light_theme() 
