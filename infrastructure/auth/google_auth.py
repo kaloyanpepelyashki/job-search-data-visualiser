@@ -11,7 +11,8 @@ from infrastructure.exceptions import AuthException
 
 logger = logging.getLogger(__name__)
 
-def authenticate_for_google():
+async def authenticate_for_google():
+    logger.info("Authenticating for Google..")
     """
     Authenticates with Google Sheets API and returns credentials.
     This method must be called on initiation of the application or before using the google_api_client class.

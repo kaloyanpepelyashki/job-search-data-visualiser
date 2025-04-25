@@ -9,8 +9,12 @@ logger = logging.getLogger(__name__)
 class JobTrackerDataProvider:
 
     def __init__(self, google_sheets_service: GoogleSheetsService):
-        self.google_sheets_service = google_sheets_service
-
+        logger.info(f"Initilising {self.__class__.__name__}")
+        try:
+            self.google_sheets_service = google_sheets_service
+        except Exception as ex:
+            logger.error(f"Error initilising {self.__class__.__name__}: {type(ex)}, {ex.args}")
+            raise ex
 
     #//TODO Test if this method works properly
     async def get_all_job_applications(self, sheet_id: str = GOOGLE_SPREADSHEET_ID):

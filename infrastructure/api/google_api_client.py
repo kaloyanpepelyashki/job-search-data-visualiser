@@ -1,9 +1,13 @@
 import logging
+
+from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
 from infrastructure.file_system import read_from_json
 from infrastructure.exceptions import APIException, AuthException
+
+from config import GOOGLE_API_SCOPES
 
 
 logger = logging.getLogger(__name__)
@@ -21,17 +25,24 @@ class GoogleAPIClient:
        #Google Sheets API service (only accesses the sheets API)
        self.sheet_api_service = None
        try:
+        logger.info(f"Initilising {self.__class__.__name__}")
         self.creds = read_from_json("google-api-token.json")
 
         if not self.creds:
-            raise AuthException("Failed to fetch auth token, failed to authenticate")
+            logger.error("Filed to retreive Google API token")
+            raise AuthException("Failed to fetch auth token, failed to authenticate for google")
+        
+        credentials = service_account.Credentials.from_service_account_info(self.creds)
 
-        self.sheet_api_service = build("sheets", version="v4", credentials=self.creds)
+        print(f"Creds in {self.__class__.__name__}, {self.creds}")
+        self.sheet_api_service = build("sheets", version="v4", credentials=credentials)
+
+        print(self.sheet_api_service)
        except Exception as ex:
-          logger.error(f"Error initialising class: {type(ex)}, {ex.args}")
-    
+          logger.error(f"Error initialising {self.__class__.__name__}: {type(ex)}, {ex.args}")
+          raise ex
 
-    def get_cells_in_range(self, sheet_id: str, range: str):
+    async def get_cells_in_range(self, sheet_id: str, range: str):
         '''
         Retrieves the values from a specified range in a Google Sheet using the Sheets API.
 
@@ -47,6 +58,7 @@ class GoogleAPIClient:
             list: A list of rows, where each row is a list of cell values. Returns an empty list if no values are found.
         '''
         if not self.sheet_api_service:
+            print(self.sheet_api_service)
             raise RuntimeError("GoogleAPIClient is not initialized. OAuth flow might still be pending.")
         
         try:

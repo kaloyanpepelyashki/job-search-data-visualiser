@@ -10,6 +10,7 @@ class ServiceManager:
     and provides an access point to them to the rest of the application
     '''
     def __init__(self):
+        logger.info(f"Initilising {self.__class__.__name__}")
         self._low_level_services = {} #Lower level services must be only called/implemented by other (higher level) services
         self._high_level_services = {} #Higher level services can be called by the UI or other levels of the application
 
@@ -71,8 +72,12 @@ class ServiceManager:
 
     
     def set_up_services(self):
-        self._set_up_lower_level()
-        self._set_up_high_level()
+        logger.info(f"Setting up services in {self.__class__.__name__}")
+        try:
+            self._set_up_lower_level()
+            self._set_up_high_level()
+        except Exception as ex:
+            logger.error(f"Failed to set up services in {self.__class__.__name__}, {type(ex)}, {ex.args}")
 
 
 service_manager = ServiceManager()

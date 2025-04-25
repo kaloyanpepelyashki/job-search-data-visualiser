@@ -141,3 +141,146 @@
 >(DEBUG) [2025-04-23 16:16:21,242]: INFO in dashboard_page: Building dashboard page
 >LOG at [2025-04-23 16:16:21,651]: INFO in dashboard_page: Fetching data
 >(DEBUG) [2025-04-23 16:16:21,651]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-24 08:44:45,092]: INFO in main: Application started
+>(DEBUG) [2025-04-24 08:44:45,092]: INFO in main: Application started
+>LOG at [2025-04-24 08:44:53,033]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-24 08:44:53,033]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-24 08:44:53,136]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-24 08:44:53,136]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-24 08:51:01,268]: INFO in main: Application started
+>(DEBUG) [2025-04-24 08:51:01,268]: INFO in main: Application started
+>LOG at [2025-04-24 08:52:31,698]: INFO in main: Application started
+>(DEBUG) [2025-04-24 08:52:31,698]: INFO in main: Application started
+>LOG at [2025-04-24 08:52:38,322]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-24 08:52:38,322]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-24 08:52:43,513]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-24 08:52:43,513]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-24 08:54:13,083]: INFO in main: Application started
+>(DEBUG) [2025-04-24 08:54:13,083]: INFO in main: Application started
+>LOG at [2025-04-24 08:54:19,277]: ERROR in main: Could not start application. <class 'infrastructure.exceptions.authentication_exception.AuthException'>, ('Failed to authenticate for google',)
+>ERROR at [2025-04-24 08:54:19,277]: ERROR in main: Could not start application. <class 'infrastructure.exceptions.authentication_exception.AuthException'>, ('Failed to authenticate for google',)
+>(DEBUG) [2025-04-24 08:54:19,277]: ERROR in main: Could not start application. <class 'infrastructure.exceptions.authentication_exception.AuthException'>, ('Failed to authenticate for google',)
+>LOG at [2025-04-24 08:54:31,198]: INFO in main: App is exiting
+>(DEBUG) [2025-04-24 08:54:31,198]: INFO in main: App is exiting
+>LOG at [2025-04-24 08:54:48,045]: INFO in main: Application started
+>(DEBUG) [2025-04-24 08:54:48,045]: INFO in main: Application started
+>LOG at [2025-04-24 08:54:54,635]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-24 08:54:54,635]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-24 08:55:05,372]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-24 08:55:05,372]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-24 09:10:34,923]: INFO in main: Application started
+>(DEBUG) [2025-04-24 09:10:34,923]: INFO in main: Application started
+>LOG at [2025-04-24 09:10:41,477]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-24 09:10:41,477]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-24 09:11:23,293]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-24 09:11:23,293]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-24 10:20:45,785]: INFO in main: Application started
+>(DEBUG) [2025-04-24 10:20:45,785]: INFO in main: Application started
+>LOG at [2025-04-24 10:20:45,788]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-24 10:20:45,788]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-24 10:20:45,882]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-24 10:20:45,882]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-24 10:21:05,388]: INFO in main: App is exiting
+>(DEBUG) [2025-04-24 10:21:05,388]: INFO in main: App is exiting
+>LOG at [2025-04-24 10:44:02,145]: INFO in main: Application started
+>(DEBUG) [2025-04-24 10:44:02,145]: INFO in main: Application started
+>LOG at [2025-04-24 10:44:02,146]: ERROR in main: Could not start application. <class 'ValueError'>, ('a coroutine was expected, got <function authenticate at 0x000001CC67E51440>',)
+>ERROR at [2025-04-24 10:44:02,146]: ERROR in main: Could not start application. <class 'ValueError'>, ('a coroutine was expected, got <function authenticate at 0x000001CC67E51440>',)
+>(DEBUG) [2025-04-24 10:44:02,146]: ERROR in main: Could not start application. <class 'ValueError'>, ('a coroutine was expected, got <function authenticate at 0x000001CC67E51440>',)
+>LOG at [2025-04-24 10:44:35,859]: INFO in main: Application started
+>(DEBUG) [2025-04-24 10:44:35,859]: INFO in main: Application started
+>LOG at [2025-04-24 10:44:42,683]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-24 10:44:42,683]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-24 10:44:42,738]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-24 10:44:42,738]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-25 13:39:17,112]: INFO in main: App is exiting
+>(DEBUG) [2025-04-25 13:39:17,112]: INFO in main: App is exiting
+>LOG at [2025-04-25 13:40:14,358]: INFO in main: Application started
+>(DEBUG) [2025-04-25 13:40:14,358]: INFO in main: Application started
+>LOG at [2025-04-25 14:07:07,559]: INFO in main: Application started
+>(DEBUG) [2025-04-25 14:07:07,559]: INFO in main: Application started
+>LOG at [2025-04-25 14:07:14,266]: INFO in dashboard_page: Building dashboard page
+>(DEBUG) [2025-04-25 14:07:14,266]: INFO in dashboard_page: Building dashboard page
+>LOG at [2025-04-25 14:07:38,939]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-25 14:07:38,939]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-25 14:07:44,674]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>ERROR at [2025-04-25 14:07:44,674]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>(DEBUG) [2025-04-25 14:07:44,674]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>LOG at [2025-04-25 14:39:32,780]: INFO in main: Application started
+>(DEBUG) [2025-04-25 14:39:32,780]: INFO in main: Application started
+>LOG at [2025-04-25 14:40:17,429]: INFO in dashboard_page: Building DashboardPage UI
+>(DEBUG) [2025-04-25 14:40:17,429]: INFO in dashboard_page: Building DashboardPage UI
+>LOG at [2025-04-25 14:40:17,552]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-25 14:40:17,552]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-25 14:40:17,552]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>ERROR at [2025-04-25 14:40:17,552]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>(DEBUG) [2025-04-25 14:40:17,552]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>LOG at [2025-04-25 14:43:01,176]: INFO in main: Application started
+>(DEBUG) [2025-04-25 14:43:01,176]: INFO in main: Application started
+>LOG at [2025-04-25 14:43:01,176]: INFO in dashboard_page: Building DashboardPage UI
+>(DEBUG) [2025-04-25 14:43:01,176]: INFO in dashboard_page: Building DashboardPage UI
+>LOG at [2025-04-25 14:43:01,234]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-25 14:43:01,234]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-25 14:43:01,234]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>ERROR at [2025-04-25 14:43:01,234]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>(DEBUG) [2025-04-25 14:43:01,234]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>LOG at [2025-04-25 14:56:34,777]: INFO in main: Application started
+>(DEBUG) [2025-04-25 14:56:34,777]: INFO in main: Application started
+>LOG at [2025-04-25 14:56:34,779]: INFO in dashboard_page: Building DashboardPage UI
+>(DEBUG) [2025-04-25 14:56:34,779]: INFO in dashboard_page: Building DashboardPage UI
+>LOG at [2025-04-25 14:56:34,901]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-25 14:56:34,901]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-25 14:56:34,902]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>ERROR at [2025-04-25 14:56:34,902]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>(DEBUG) [2025-04-25 14:56:34,902]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>LOG at [2025-04-25 14:57:22,555]: INFO in main: App is exiting
+>(DEBUG) [2025-04-25 14:57:22,555]: INFO in main: App is exiting
+>LOG at [2025-04-25 15:00:27,320]: INFO in main: Application started
+>(DEBUG) [2025-04-25 15:00:27,320]: INFO in main: Application started
+>LOG at [2025-04-25 15:00:27,322]: INFO in dashboard_page: Building DashboardPage UI
+>(DEBUG) [2025-04-25 15:00:27,322]: INFO in dashboard_page: Building DashboardPage UI
+>LOG at [2025-04-25 15:00:27,427]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-25 15:00:27,427]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-25 15:00:27,427]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>ERROR at [2025-04-25 15:00:27,427]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>(DEBUG) [2025-04-25 15:00:27,427]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>LOG at [2025-04-25 15:01:16,774]: INFO in main: App is exiting
+>(DEBUG) [2025-04-25 15:01:16,774]: INFO in main: App is exiting
+>LOG at [2025-04-25 15:01:32,064]: INFO in main: Application started
+>(DEBUG) [2025-04-25 15:01:32,064]: INFO in main: Application started
+>LOG at [2025-04-25 15:01:32,064]: INFO in dashboard_page: Building DashboardPage UI
+>(DEBUG) [2025-04-25 15:01:32,064]: INFO in dashboard_page: Building DashboardPage UI
+>LOG at [2025-04-25 15:01:32,129]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-25 15:01:32,129]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-25 15:01:32,130]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>ERROR at [2025-04-25 15:01:32,130]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>(DEBUG) [2025-04-25 15:01:32,130]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>LOG at [2025-04-25 15:02:19,701]: INFO in main: App is exiting
+>(DEBUG) [2025-04-25 15:02:19,701]: INFO in main: App is exiting
+>LOG at [2025-04-25 15:02:56,472]: INFO in main: Application started
+>(DEBUG) [2025-04-25 15:02:56,472]: INFO in main: Application started
+>LOG at [2025-04-25 15:02:56,473]: INFO in dashboard_page: Building DashboardPage UI
+>(DEBUG) [2025-04-25 15:02:56,473]: INFO in dashboard_page: Building DashboardPage UI
+>LOG at [2025-04-25 15:02:56,569]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-25 15:02:56,569]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-25 15:02:56,569]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>ERROR at [2025-04-25 15:02:56,569]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>(DEBUG) [2025-04-25 15:02:56,569]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>LOG at [2025-04-25 15:19:06,717]: INFO in main: Application started
+>(DEBUG) [2025-04-25 15:19:06,717]: INFO in main: Application started
+>LOG at [2025-04-25 15:19:06,719]: INFO in dashboard_page: Building DashboardPage UI
+>(DEBUG) [2025-04-25 15:19:06,719]: INFO in dashboard_page: Building DashboardPage UI
+>LOG at [2025-04-25 15:19:06,808]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-25 15:19:06,808]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-25 15:19:06,809]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>ERROR at [2025-04-25 15:19:06,809]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>(DEBUG) [2025-04-25 15:19:06,809]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>LOG at [2025-04-25 15:20:39,068]: INFO in main: Application started
+>(DEBUG) [2025-04-25 15:20:39,068]: INFO in main: Application started
+>LOG at [2025-04-25 15:20:39,070]: INFO in dashboard_page: Building DashboardPage UI
+>(DEBUG) [2025-04-25 15:20:39,070]: INFO in dashboard_page: Building DashboardPage UI
+>LOG at [2025-04-25 15:20:39,156]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-25 15:20:39,156]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-25 15:20:39,156]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>ERROR at [2025-04-25 15:20:39,156]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>(DEBUG) [2025-04-25 15:20:39,156]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)

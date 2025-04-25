@@ -5,6 +5,7 @@ from infrastructure.api import GoogleAPIClient
 
 from infrastructure.exceptions import APIException
 from infrastructure.exceptions import DataFetchException, OperationException
+from infrastructure.exceptions.authentication_exception import AuthException
 
 
 logger = logging.getLogger(__name__)
@@ -12,11 +13,16 @@ logger = logging.getLogger(__name__)
 class GoogleSheetsService:
 
     def __init__(self, google_api_client: GoogleAPIClient):
-        self.google_api = google_api_client
+        logger.info(f"Initilising {self.__class__.__name__}")
+        try:
+            self.google_api = google_api_client
+        except AuthException as ex:
+            logger.error(f"Error initilising {self.__class__.__name__}: {type(ex)}, {ex.args}")
+            raise ex
 
 
     #//TODO Test this method, still not tested
-    def get_range_end_value(self, google_sheet_id: str, sheet_tab: str):
+    async def get_range_end_value(self, google_sheet_id: str, sheet_tab: str):
         '''
         Determines the last populated cell's position (row and column) in a specified Google Sheet tab.
 
@@ -38,7 +44,7 @@ class GoogleSheetsService:
 
         try:
 
-            populated_cells = self.google_api.get_cells_in_range(sheet_id=sheet_id, range=sheet_tab)
+            populated_cells = await self.google_api.get_cells_in_range(sheet_id=sheet_id, range=sheet_tab)
 
             if not populated_cells:
                 logger.error("Failed to fetch populated cells in _get_range_end_value method")
@@ -53,7 +59,7 @@ class GoogleSheetsService:
             raise DataFetchException("Unable to fetch cells at this time") from ex
         except Exception as ex:
             logger.error(f"Failed to get range end value: {type(ex)}, {ex.args}")
-            raise OperationException("Failed complete get range end value operation") from ex
+            raise OperationException("Failed to complete get range end value operation") from ex
 
     #//TODO Test this method, still not tested
     def compose_range(self, sheet, range_start_column, range_start_row, range_end_column, range_end_row):

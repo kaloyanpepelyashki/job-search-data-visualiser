@@ -20,7 +20,7 @@ class DashboardPage(BasePage):
         Exceptions are logged if any errors occur during UI construction.
         """
         try:
-            self.logger.info("Building dashboard page")
+            self.logger.info(f"Building {self.__class__.__name__} UI")
             with dpg.child_window(label="Dashboard", tag=self.tag, parent=self.parent_window_tag, show=self.visible, autosize_x=True, autosize_y=True, border=False):
                 dpg.add_text("📊 Dashboard Overview page")
                 dpg.add_button(label="Refresh Chart", callback=self.update)

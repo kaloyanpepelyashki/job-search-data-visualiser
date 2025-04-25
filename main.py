@@ -1,24 +1,29 @@
+import asyncio
+from infrastructure.auth import authenticate_for_google
+asyncio.run(authenticate_for_google())
+
 import logging
 import dearpygui.dearpygui as dpg
-from config import WINDOW_WIDTH, WINDOW_HEIGHT, APP_NAME, APP_NAME_SHORT
+from config import WINDOW_WIDTH, WINDOW_HEIGHT, APP_NAME
 from infrastructure.screen import center_viewport
 from infrastructure import setup_logger
 from infrastructure.navigation import page_manager
-from infrastructure.auth import authenticate_for_google
 from ui.theme import create_light_theme
 from ui.pages import DashboardPage, ApplicationsPage
 from ui.components import NavBar
 from infrastructure.runtime import async_manager
 
 
+
 setup_logger()
 logger = logging.getLogger(__name__)
+
 
 def main() :
     try:
         logger.info("Application started")
 
-        authenticate_for_google()
+   
 
 
         dpg.create_context()
@@ -37,7 +42,7 @@ def main() :
         page_manager.build_layout(WINDOW_WIDTH, WINDOW_HEIGHT)
         page_manager.switch_page(page_manager.pages[dashboard_page.tag])
 
-        #async_manager.start_polling()
+        async_manager.start_polling()
 
         #//TODO For later: Write the logic for checking if dark theme is on and create the right theme accordingly
         theme = create_light_theme() 
