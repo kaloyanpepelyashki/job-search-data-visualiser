@@ -1,6 +1,9 @@
 import logging
 
+import os
+
 from google.oauth2 import service_account
+from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
@@ -26,18 +29,22 @@ class GoogleAPIClient:
        self.sheet_api_service = None
        try:
         logger.info(f"Initilising {self.__class__.__name__}")
+        #Currently used only to check if the token file is not empty
         self.creds = read_from_json("google-api-token.json")
 
+        #Checks if the token file exists
+        if not os.path.exists("google-api-token.json"):
+            logger.error("Filed to retreive Google API token. File does not exist")
+            raise AuthException("Failed to authenticate for google. The token file does not exist")
+        
+        #Checks if the token file is empty
         if not self.creds:
             logger.error("Filed to retreive Google API token")
             raise AuthException("Failed to fetch auth token, failed to authenticate for google")
         
-        credentials = service_account.Credentials.from_service_account_info(self.creds)
-
-        print(f"Creds in {self.__class__.__name__}, {self.creds}")
+        credentials = Credentials.from_authorized_user_file("google-api-token.json", [GOOGLE_API_SCOPES])
         self.sheet_api_service = build("sheets", version="v4", credentials=credentials)
 
-        print(self.sheet_api_service)
        except Exception as ex:
           logger.error(f"Error initialising {self.__class__.__name__}: {type(ex)}, {ex.args}")
           raise ex

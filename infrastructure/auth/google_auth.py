@@ -12,24 +12,22 @@ from infrastructure.exceptions import AuthException
 logger = logging.getLogger(__name__)
 
 async def authenticate_for_google():
-    logger.info("Authenticating for Google..")
     """
     Authenticates with Google Sheets API and returns credentials.
     This method must be called on initiation of the application or before using the google_api_client class.
     It is required to authenticate for google, to access the APIs
     """
     
-    SCOPES = GOOGLE_API_SCOPES
+    SCOPES = [GOOGLE_API_SCOPES]
     creds = None
 
     try:
-        if os.path.exists("google-api-token.json.json"):
+        if os.path.exists("google-api-token.json"):
             creds = Credentials.from_authorized_user_file("google-api-token.json", SCOPES)
         if not creds or not creds.valid:
             if creds and creds.expired and creds.refresh_token:
                 creds.refresh(Request())
             else:
-                logger.info("")
                 flow = InstalledAppFlow.from_client_secrets_file(
                 "google-credentials.json", SCOPES
                 )

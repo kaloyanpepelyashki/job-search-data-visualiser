@@ -21,7 +21,6 @@ class GoogleSheetsService:
             raise ex
 
 
-    #//TODO Test this method, still not tested
     async def get_range_end_value(self, google_sheet_id: str, sheet_tab: str):
         '''
         Determines the last populated cell's position (row and column) in a specified Google Sheet tab.
@@ -61,14 +60,12 @@ class GoogleSheetsService:
             logger.error(f"Failed to get range end value: {type(ex)}, {ex.args}")
             raise OperationException("Failed to complete get range end value operation") from ex
 
-    #//TODO Test this method, still not tested
     def compose_range(self, sheet, range_start_column, range_start_row, range_end_column, range_end_row):
         range = f"{sheet}!{range_start_column}{range_start_row}:{range_end_column}{range_end_row}"
 
         return range
 
-    #//TODO Test this method, still not tested
-    def get_all_cells(self, google_sheet_id: str, range):
+    async def get_all_cells(self, google_sheet_id: str, range):
         '''
         Retrieves all cell values from a specified range in a Google Sheet.
 
@@ -82,7 +79,7 @@ class GoogleSheetsService:
         sheet_id: str = google_sheet_id
 
         try:
-            cells = self.google_api.get_cells_in_range(sheet_id, range)
+            cells = await self.google_api.get_cells_in_range(sheet_id, range)
 
             if not cells:
                 logger.info("No data was fetched from sheet")
@@ -107,4 +104,4 @@ class GoogleSheetsService:
             self.google_api.append_values_in_range(sheet_id, range, "USER_ENTERED", values=values)
         except APIException as ex:
             logger.error(f"Error appending row {type(ex)}, {ex.args}")
-            raise OperationException("Unable to completre append operations") from ex
+            raise OperationException("Unable to complete append operations") from ex

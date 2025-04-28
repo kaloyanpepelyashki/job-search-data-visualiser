@@ -1,5 +1,7 @@
 .env
 google-credentials.json
+google-credentials(service).json
 google-api-token.json
+google-api-token(newer).json
 google-api-token(old).json
 token.json

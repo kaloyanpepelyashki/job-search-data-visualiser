@@ -284,3 +284,85 @@
 >LOG at [2025-04-25 15:20:39,156]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
 >ERROR at [2025-04-25 15:20:39,156]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
 >(DEBUG) [2025-04-25 15:20:39,156]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>LOG at [2025-04-28 10:10:40,036]: INFO in main: Application started
+>(DEBUG) [2025-04-28 10:10:40,036]: INFO in main: Application started
+>LOG at [2025-04-28 10:10:40,048]: INFO in dashboard_page: Building DashboardPage UI
+>(DEBUG) [2025-04-28 10:10:40,048]: INFO in dashboard_page: Building DashboardPage UI
+>LOG at [2025-04-28 10:10:40,549]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-28 10:10:40,549]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-28 10:10:41,489]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>ERROR at [2025-04-28 10:10:41,489]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>(DEBUG) [2025-04-28 10:10:41,489]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>LOG at [2025-04-28 10:14:37,508]: INFO in main: Application started
+>(DEBUG) [2025-04-28 10:14:37,508]: INFO in main: Application started
+>LOG at [2025-04-28 10:14:37,510]: INFO in dashboard_page: Building DashboardPage UI
+>(DEBUG) [2025-04-28 10:14:37,510]: INFO in dashboard_page: Building DashboardPage UI
+>LOG at [2025-04-28 10:14:37,587]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-28 10:14:37,587]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-28 10:14:37,588]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>ERROR at [2025-04-28 10:14:37,588]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>(DEBUG) [2025-04-28 10:14:37,588]: ERROR in dashboard_page: Error fetching data: <class 'ValueError'>, ("Service 'job_tracker_data_provider' is not registered.",)
+>LOG at [2025-04-28 11:22:37,248]: INFO in main: Application started
+>(DEBUG) [2025-04-28 11:22:37,248]: INFO in main: Application started
+>LOG at [2025-04-28 11:22:37,250]: INFO in dashboard_page: Building DashboardPage UI
+>(DEBUG) [2025-04-28 11:22:37,250]: INFO in dashboard_page: Building DashboardPage UI
+>LOG at [2025-04-28 11:22:37,333]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-28 11:22:37,333]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-28 11:25:22,065]: INFO in main: App is exiting
+>(DEBUG) [2025-04-28 11:25:22,065]: INFO in main: App is exiting
+>LOG at [2025-04-28 11:30:03,447]: INFO in main: Application started
+>(DEBUG) [2025-04-28 11:30:03,447]: INFO in main: Application started
+>LOG at [2025-04-28 11:30:03,449]: INFO in dashboard_page: Building DashboardPage UI
+>(DEBUG) [2025-04-28 11:30:03,449]: INFO in dashboard_page: Building DashboardPage UI
+>LOG at [2025-04-28 11:30:03,545]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-28 11:30:03,545]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-28 11:31:26,887]: INFO in main: Application started
+>(DEBUG) [2025-04-28 11:31:26,887]: INFO in main: Application started
+>LOG at [2025-04-28 11:31:26,889]: INFO in dashboard_page: Building DashboardPage UI
+>(DEBUG) [2025-04-28 11:31:26,889]: INFO in dashboard_page: Building DashboardPage UI
+>LOG at [2025-04-28 11:31:28,761]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-28 11:31:28,761]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-28 11:41:32,981]: INFO in main: Application started
+>(DEBUG) [2025-04-28 11:41:32,981]: INFO in main: Application started
+>LOG at [2025-04-28 11:41:32,983]: INFO in dashboard_page: Building DashboardPage UI
+>(DEBUG) [2025-04-28 11:41:32,983]: INFO in dashboard_page: Building DashboardPage UI
+>LOG at [2025-04-28 11:41:36,082]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-28 11:41:36,082]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-28 11:46:09,562]: INFO in main: Application started
+>(DEBUG) [2025-04-28 11:46:09,562]: INFO in main: Application started
+>LOG at [2025-04-28 11:46:09,564]: INFO in dashboard_page: Building DashboardPage UI
+>(DEBUG) [2025-04-28 11:46:09,564]: INFO in dashboard_page: Building DashboardPage UI
+>LOG at [2025-04-28 11:46:11,861]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-28 11:46:11,861]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-28 12:51:07,046]: INFO in main: Application started
+>(DEBUG) [2025-04-28 12:51:07,046]: INFO in main: Application started
+>LOG at [2025-04-28 12:51:07,048]: INFO in dashboard_page: Building DashboardPage UI
+>(DEBUG) [2025-04-28 12:51:07,048]: INFO in dashboard_page: Building DashboardPage UI
+>LOG at [2025-04-28 12:51:07,048]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-28 12:51:07,048]: INFO in dashboard_page: Fetching data
+>LOG at [2025-04-28 13:03:52,877]: INFO in main: Authenticating for Google...
+>(DEBUG) [2025-04-28 13:03:52,877]: INFO in main: Authenticating for Google...
+>LOG at [2025-04-28 13:03:53,011]: INFO in service_manager: Initilising ServiceManager
+>(DEBUG) [2025-04-28 13:03:53,011]: INFO in service_manager: Initilising ServiceManager
+>LOG at [2025-04-28 13:03:53,011]: INFO in service_manager: Setting up services in ServiceManager
+>(DEBUG) [2025-04-28 13:03:53,011]: INFO in service_manager: Setting up services in ServiceManager
+>LOG at [2025-04-28 13:03:53,012]: INFO in google_api_client: Initilising GoogleAPIClient
+>(DEBUG) [2025-04-28 13:03:53,012]: INFO in google_api_client: Initilising GoogleAPIClient
+>LOG at [2025-04-28 13:03:53,013]: INFO in __init__: file_cache is only supported with oauth2client<4.0.0
+>(DEBUG) [2025-04-28 13:03:53,013]: INFO in __init__: file_cache is only supported with oauth2client<4.0.0
+>LOG at [2025-04-28 13:03:53,015]: INFO in google_sheets_service: Initilising GoogleSheetsService
+>(DEBUG) [2025-04-28 13:03:53,015]: INFO in google_sheets_service: Initilising GoogleSheetsService
+>LOG at [2025-04-28 13:03:53,015]: INFO in job_tracker_data_provider: Initilising JobTrackerDataProvider
+>(DEBUG) [2025-04-28 13:03:53,015]: INFO in job_tracker_data_provider: Initilising JobTrackerDataProvider
+>LOG at [2025-04-28 13:03:53,034]: INFO in async_manager: Async initialised successfully
+>(DEBUG) [2025-04-28 13:03:53,034]: INFO in async_manager: Async initialised successfully
+>LOG at [2025-04-28 13:03:53,036]: INFO in main: Application started
+>(DEBUG) [2025-04-28 13:03:53,036]: INFO in main: Application started
+>LOG at [2025-04-28 13:03:53,039]: INFO in dashboard_page: Building DashboardPage UI
+>(DEBUG) [2025-04-28 13:03:53,039]: INFO in dashboard_page: Building DashboardPage UI
+>LOG at [2025-04-28 13:03:53,039]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-28 13:03:53,039]: INFO in dashboard_page: Fetching data
+>(DEBUG) [2025-04-28 13:03:53,272]: DEBUG in discovery: URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1UK0iLIDcJJJV1c4Ct7thHbHGqiZaEKH1yRw5mnQyYPg/values/Sheet1?alt=json
+>(DEBUG) [2025-04-28 13:03:54,486]: DEBUG in discovery: URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1UK0iLIDcJJJV1c4Ct7thHbHGqiZaEKH1yRw5mnQyYPg/values/Sheet1%21B4%3AT33?alt=json
+>LOG at [2025-04-28 13:14:06,880]: INFO in main: App is exiting
+>(DEBUG) [2025-04-28 13:14:06,880]: INFO in main: App is exiting

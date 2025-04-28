@@ -1,12 +1,18 @@
 import asyncio
+import logging
+from infrastructure import setup_logger
+
+setup_logger()
+logger = logging.getLogger(__name__)
 from infrastructure.auth import authenticate_for_google
+logger.info("Authenticating for Google...")
 asyncio.run(authenticate_for_google())
 
-import logging
+
 import dearpygui.dearpygui as dpg
 from config import WINDOW_WIDTH, WINDOW_HEIGHT, APP_NAME
 from infrastructure.screen import center_viewport
-from infrastructure import setup_logger
+
 from infrastructure.navigation import page_manager
 from ui.theme import create_light_theme
 from ui.pages import DashboardPage, ApplicationsPage
@@ -14,22 +20,16 @@ from ui.components import NavBar
 from infrastructure.runtime import async_manager
 
 
-
-setup_logger()
-logger = logging.getLogger(__name__)
-
-
 def main() :
     try:
         logger.info("Application started")
-
-   
 
 
         dpg.create_context()
         dpg.create_viewport(title=APP_NAME, width=WINDOW_WIDTH, height=WINDOW_HEIGHT, clear_color=(249, 249, 251, 100))
         center_viewport(WINDOW_WIDTH, WINDOW_HEIGHT)
 
+        #The master component tag, defines where the child components (pages) must display (within the master component or the parent component)
         master_component_tag = page_manager.parent_window_tag
 
         dashboard_page = DashboardPage(master_component_tag, int(WINDOW_WIDTH), int(WINDOW_HEIGHT))
