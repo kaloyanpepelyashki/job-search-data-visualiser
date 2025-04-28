@@ -12,7 +12,6 @@ class PageManager:
         self.parent_window_tag = "master_content_area"
 
 
-
     def register_pages(self, pages: dict):
         '''
         Rgisters pages in the PageManager registry.

@@ -10,7 +10,12 @@ class ApplicationsPage(BasePage):
         self.state["height"] = int(height)
 
     def build(self):
-        self.logger.info("Building applications page")
+        """
+        Constructs the dashboard UI components using the DearPyGui widgets..
+        It sets `is_built` to True once construction is successful. Indicating that the page (UI) has already been built once
+
+        Exceptions are logged if any errors occur during UI construction.
+        """
         try:
             width = int(self.state.get("width", 600)) 
             height = int(self.state.get("height", 400))

@@ -1,8 +1,10 @@
 import logging
 import dearpygui.dearpygui as dpg
 
+from infrastructure.services import service_manager
+
 class BasePage:
-    def __init__(self, tag: str, visible: bool = False, parent_window_tag = None):
+    def __init__(self, tag: str, visible: bool = False, parent_window_tag = None, substitude_service_manager = None):
         #The logger. Used to log general or error application logs
         self.logger = logging.getLogger(__name__)
 
@@ -10,6 +12,7 @@ class BasePage:
         self.parent_window_tag: str = parent_window_tag
         self.visible = visible
         self.state = {}
+        self.service_manager = substitude_service_manager or service_manager
         #Controls if the page has been built already in the current application run
         self.is_built = False
     
