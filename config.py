@@ -9,6 +9,7 @@ APP_NAME = "Job Search Data Visualiser"
 APP_NAME_SHORT = "JSDV"
 VERSION = "0.0.1"
 DEBUG = True
+ENVIRONMENT = "Development" # "Development" or "Production"
 
 #ALL GUI CONFIG ---- >
 WINDOW_WIDTH = 2560
@@ -23,6 +24,6 @@ DEFAULT_FONT = ("Arial", 12)
 
 #API CONFIG ===== >
 GOOGLE_API_SCOPES = os.getenv("GOOGLE_API_SCOPES")
-GOOGLE_SPREADSHEET_ID = os.getenv("GOOGLE_SPREADSHEET_ID")
+GOOGLE_SPREADSHEET_ID = os.getenv("GOOGLE_SPREADSHEET_ID") if ENVIRONMENT == "Production" else os.getenv("GOOGLE_TEST_SPREADSHEET_ID")
 
 #< =====

@@ -51,7 +51,6 @@ class DashboardPage(BasePage):
                     job_tracker_data_provider = self.service_manager.get_service("job_tracker_data_provider")
                     data = await job_tracker_data_provider.get_all_job_applications()
                     
-                    print("Data in fetch", data)
                     return data
                 except Exception as ex:
                     self.logger.error(f"Error fetching data: {type(ex)}, {ex.args}")
